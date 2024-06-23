@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davor Lazarov WEB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <section class="intro">
+        <h1>Welcome to Davor Lazarov's Website</h1>
+        <p>Student at FINKI, Computer Science and Software Engineering University in Skopje, Macedonia.</p>
+        <a class="button" id="interests" onclick="toggleInterests()">About My Interests</a>
+    </section>
+    <section id="interests-section" class="interests hidden">
+        <h2>Very Passionate About:</h2>
+        <ul class="interests-list">
+            <li>
+                <div class="interest">
+                    <h3>Cars</h3>
+                    <img src="2024-audi-rs3-102-64a59d6780ff7.jpg" alt="Cars">
+                </div>
+            </li>
+            <li>
+                <div class="interest">
+                    <h3>Formula 1</h3>
+                    <img src="GettyImages-1656999898.avif" alt="Formula 1">
+                </div>
+            </li>
+            <li>
+                <div class="interest">
+                    <h3>Weightlifting</h3>
+                    <img src="strong-bodybuilder-doing-heavy-weight-exercise-back-machine-1-1067x800.jpg" alt="Weightlifting">
+                </div>
+            </li>
+            <li>
+                <div class="interest">
+                    <h3>Boxing</h3>
+                    <img src="skynews-conor-mcgregor-las-vegas_6581235.jpg" alt="Boxing">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    </section>
+    <script>
+        function toggleInterests() {
+            let interestsSection = document.getElementById('interests-section');
+            interestsSection.classList.toggle('hidden');
+        }
+    </script>
+
+</main>
+<footer>
+    <p>© 2024 Davor Lazarov</p>
+</footer>
+</body>
+</html>
